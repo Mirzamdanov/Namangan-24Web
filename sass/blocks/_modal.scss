@@ -1,0 +1,53 @@
+.modal {
+	background-image: url(../../images/bg-modal.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 1050px;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__heading {
+		margin: 25px 0px 25px 30px;
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	&__submit {
+		margin: 25px 70px 25px 0px;
+		width: 149px;
+		height: 50px;
+		background: #F78B3B;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+}
+
+.modal__button--body {
+	text-align: center;
+	position: absolute;
+	background-color: #ffffff;
+	width: 800px;
+	border-radius: 8px;
+	padding: 20px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+	z-index: 1000;
+} 
+
+.curtain {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #ecf0f1;
+	z-index: 1;
+	opacity: 0.5;
+}
+
+.modal__off {
+	display: none;
+}
